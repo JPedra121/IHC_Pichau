@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Detalhe</title>
+</head>
+<body>
+    <main class="page">
+        <section class="screen screen--product" aria-label="Detalhes do Componente">
+            <header class="home-header">
+                <button class="icon-button" aria-label="Menu Principal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                
+                <div class="home-header__brand-group">
+                    <a href="home.html" class="home-brand" style="text-decoration: none; color: inherit; cursor: pointer;">Pichau</a>
+                </div>
+                
+                <a href="carrinho.html" class="cart-button-highlight" aria-label="Carrinho de Compras">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count">(5)</span>
+                </a>
+            </header>
+            <div class="header__copy" aria-label="Container">
+                <h1>Detalhes do Produto</h1>
+            </div>
+            <div class="product-hero-section" aria-label="Product Hero Section">
+                
+                <div class="image-carousel-column" aria-label="Image Carousel Column">
+                    <div class="hero-media frame-card" aria-label="Overlay+Border+OverlayBlur">
+                        <img src="figma-assets/4080.jpg" alt="NVIDIA GeForce RTX 4080 Super OC Edition" class="hero-image">
+                    </div>
+                </div>
+
+                <div class="product-info-column" aria-label="Product Info Column">
+                    <div class="stock-badge">EM ESTOQUE</div>
+                    <div class="headline-block">
+                        <h1 class="product-title">NVIDIA GeForce RTX<br>4080 Super OC Edition</h1>
+                    </div>
+
+                    <div class="product-card__rating">
+                        <span class="rating-star">★</span>
+                        <span class="rating-value">5.0 (42)</span>
+                    </div>
+
+                    <p class="product-description">16GB GDDR6X, Ada Lovelace Architecture, DLSS<br>3.5 &amp; Ray Tracing - O ápice da performance para<br>builds entusiastas.</p>
+
+                    <div class="pricing-glass-card frame-card" aria-label="Pricing Glass Card">
+                        <div class="pricing-glass-card__content">
+                            <div class="pricing-stack">
+                                <span class="label label--small">PREÇO VIA PIX (-15%)</span>
+                                <strong class="pix-price">R$ 6.499,90</strong>
+                            </div>
+
+                            <div class="pricing-divider"></div>
+
+                            <div class="pricing-stack">
+                                <span class="label label--small">OU PARCELADO</span>
+                                <strong class="installment-price">R$ 7.999,88</strong>
+                                <p class="installment-note">em até 12x de R$ 666,66 sem juros</p>
+                            </div>
+                        </div>
+                        <div class="pricing-glow" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="action-buttons" aria-label="Action Buttons">
+                        <a class="button button--primary" href="carrinho.html" aria-label="Comprar agora">
+                            <img src="figma-assets/buy-icon.svg" alt="" class="button__icon button__icon--buy">
+                            <span>COMPRAR AGORA</span>
+                        </a>
+
+                        <a class="button button--secondary" href="builds.html" aria-label="Adicionar à build">
+                            <img src="figma-assets/build-icon.svg" alt="" class="button__icon button__icon--build">
+                            <span>ADICIONAR À BUILD</span>
+                        </a>
+
+                        <a class="button button--secondary" href="preco.html" aria-label="Comparar preço">
+                            <span>COMPARAR PREÇO</span>
+                        </a>
+                    </div>
+
+                    <div class="quick-specs-list" aria-label="Quick Specs List">
+                        <div class="quick-spec-row quick-spec-row--alt">
+                            <span class="quick-spec-label">Arquitetura</span>
+                            <span class="quick-spec-value">Ada Lovelace</span>
+                        </div>
+                        <div class="quick-spec-row">
+                            <span class="quick-spec-label">Memória VRAM</span>
+                            <span class="quick-spec-value">16GB GDDR6X</span>
+                        </div>
+                        <div class="quick-spec-row quick-spec-row--alt">
+                            <span class="quick-spec-label">TDP Recomendado</span>
+                            <span class="quick-spec-value">850W+ Gold</span>
+                        </div>
+                    </div>
+                    
+                    <section class="detailed-specifications" aria-label="Section - Detailed Specifications">
+                        <div class="section-heading section-heading--purple">
+                            <div class="section-heading__accent"></div>
+                            <h2>ESPECIFICAÇÕES TÉCNICAS</h2>
+                        </div>
+
+                        <div class="spec-list" aria-label="Container">
+                            <div class="spec-row spec-row--alt">
+                                <span class="spec-label">CUDA CORES</span>
+                                <span class="spec-value spec-value--strong">10,240</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">CORE CLOCK</span>
+                                <span class="spec-value">2,295 MHz</span>
+                            </div>
+                            <div class="spec-row spec-row--alt">
+                                <span class="spec-label">BOOST CLOCK</span>
+                                <span class="spec-value">2,640 MHz</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">MEMÓRIA</span>
+                                <span class="spec-value">16GB GDDR6X</span>
+                            </div>
+                            <div class="spec-row spec-row--alt">
+                                <span class="spec-label">LARGURA DE BANDA</span>
+                                <span class="spec-value">736 GB/s</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">TECNOLOGIAS</span>
+                                <span class="spec-value">DLSS 3.5, Ray Tracing Gen 3</span>
+                            </div>
+                            <div class="spec-row spec-row--alt">
+                                <span class="spec-label">INTERFACE</span>
+                                <span class="spec-value">PCI-E 4.0 x16</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">CONECTORES</span>
+                                <span class="spec-value">3x DisplayPort, 1x HDMI</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <section class="suggestions-section" aria-label="Sugestões de Compra" style="padding-bottom: 80px;">
+                <div class="upsell-header">
+                    <div class="upsell-copy">
+                        <div class="section-heading section-heading--violet">
+                            <div class="section-heading__accent"></div>
+                            <h2>COMBINE COM ESTE PRODUTO</h2>
+                        </div>
+                        <p class="upsell-description">Componentes selecionados para extrair o máximo de performance.</p>
+                    </div>
+
+                    <a class="build-complete-button" href="#" aria-label="Ver build completa">
+                        <span>VER BUILD COMPLETA</span>
+                        <img src="figma-assets/build-arrow.svg" alt="" class="button__icon button__icon--arrow">
+                    </a>
+                </div>
+                
+                <div class="suggestions-slider" style="display: flex; gap: 16px; margin-top: 24px; padding-bottom: 16px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;"> 
+                    
+                    <article class="suggestion-card" aria-label="Fonte" style="flex: 0 0 auto; scroll-snap-align: start; width: 140px;">
+                        <div class="suggestion-card__image-wrap">
+                            <img src="figma-assets/psu-56586a.png" alt="Fonte 850W" class="suggestion-card__image">
+                        </div>
+                        <div class="suggestion-card__text-block suggestion-card__text-block--stacked">
+                            <span class="suggestion-card__eyebrow">FONTE RECOMENDADA</span>
+                            <h3 class="suggestion-card__title suggestion-card__title--small">850W 80 Plus Gold</h3>
+                            <strong class="suggestion-card__price suggestion-card__price--small">R$ 750</strong>
+                        </div>
+                        <a class="mini-button" href="#" aria-label="Adicionar fonte">
+                            <img src="figma-assets/card-add-icon-2.svg" alt="" class="button__icon button__icon--add">
+                            <span>Adicionar</span>
+                        </a>
+                    </article>
+
+                    <article class="suggestion-card" aria-label="RAM" style="flex: 0 0 auto; scroll-snap-align: start; width: 140px;">
+                        <div class="suggestion-card__image-wrap">
+                            <img src="figma-assets/ram-56586a.png" alt="32GB DDR5 6000MT/s" class="suggestion-card__image">
+                        </div>
+                        <div class="suggestion-card__text-block suggestion-card__text-block--stacked">
+                            <span class="suggestion-card__eyebrow">MEMÓRIA</span>
+                            <h3 class="suggestion-card__title suggestion-card__title--small">32GB DDR5 6000MT/s</h3>
+                            <strong class="suggestion-card__price suggestion-card__price--small">R$ 940</strong>
+                        </div>
+                        <a class="mini-button" href="#" aria-label="Adicionar memória">
+                            <img src="figma-assets/card-add-icon-3.svg" alt="" class="button__icon button__icon--add">
+                            <span>Adicionar</span>
+                        </a>
+                    </article>
+
+                    <article class="suggestion-card" aria-label="Processador" style="flex: 0 0 auto; scroll-snap-align: start; width: 140px;">
+                        <div class="suggestion-card__image-wrap">
+                            <img src="figma-assets/processor-f255f9.png" alt="Intel Core i9-14900K" class="suggestion-card__image">
+                        </div>
+                        <div class="suggestion-card__text-block suggestion-card__text-block--stacked">
+                            <span class="suggestion-card__eyebrow">PROCESSADOR</span>
+                            <h3 class="suggestion-card__title suggestion-card__title--small">Intel Core i9-14900K</h3>
+                            <strong class="suggestion-card__price suggestion-card__price--small">R$ 3.899</strong>
+                        </div>
+                        <a class="mini-button" href="#" aria-label="Adicionar processador">
+                            <img src="figma-assets/card-add-icon.svg" alt="" class="button__icon button__icon--add">
+                            <span>Adicionar</span>
+                        </a>
+                    </article>
+
+                </div>
+            </section>
+            <nav class="bottom-nav">
+                <a href="home.html" class="bottom-nav__item" aria-label="Página Inicial">
+                    <img src="figma-assets\nav-home.svg" alt="Home" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Home</span>
+                </a>
+                
+                <a href="#" class="bottom-nav__item" aria-label="Ir para Catálogo">
+                    <img src="figma-assets\nav-catalog.svg" alt="Catálogo" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Catálogo</span>
+                </a>
+                
+                <a href="builds.html" class="bottom-nav__item" aria-label="Ir para Builds">
+                    <img src="figma-assets\nav-builds.svg" alt="Builds" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Builds</span>
+                </a>
+                
+                <a href="preco.html" class="bottom-nav__item" aria-label="Ir para Ofertas">
+                    <img src="figma-assets\nav-offers.svg" alt="Ofertas" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Ofertas</span>
+                </a>
+                
+                <a href="#" class="bottom-nav__item" aria-label="Ir para Perfil">
+                    <img src="figma-assets\nav-profile.svg" alt="Perfil" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Perfil</span>
+                </a>
+            </nav>
+        </section>
+    </main>
+
+</body>
+</html>

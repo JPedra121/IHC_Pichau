@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Builds</title>
+</head>
+<body>
+    <main class="page">
+        <section class="screen screen--projects" aria-label="Meus Projetos">
+                            <section class="screen screen--projects" aria-label="Meus Projetos">
+                                <header class="home-header">
+                                    <button class="icon-button" aria-label="Menu Principal">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+                                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                                        </svg>
+                                    </button>
+                                    
+                                    <div class="home-header__brand-group">
+                                        <a href="home.html" class="home-brand" style="text-decoration: none; color: inherit; cursor: pointer;">Pichau</a>
+                                    </div>
+                                    
+                                    <a href="carrinho.html" class="cart-button-highlight" aria-label="Carrinho de Compras">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;">
+                                            <circle cx="9" cy="21" r="1"></circle>
+                                            <circle cx="20" cy="21" r="1"></circle>
+                                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                        </svg>
+                                        <span class="cart-count">(5)</span>
+                                    </a>
+                                </header>
+                                <div class="header__copy" aria-label="Container">
+                                    <h1>Planejador de Builds</h1>
+                                </div>
+
+                                <section class="projects-panel projects-panel--projects" aria-label="Projetos">
+                                    <div class="projects-panel__header">
+                                        <h2>Meus Projetos</h2>
+                                        <a class="projects-draft-link" href="#" aria-label="Novo Rascunho">
+                                            <span class="projects-draft-link__plus">+</span>
+                                            <span>Novo Rascunho</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="projects-cards">
+                                        <article class="project-card project-card--active" aria-label="Endgame 2024">
+                                            <span class="project-card__status">ATIVO</span>
+                                            <strong class="project-card__title">Endgame 2024</strong>
+                                            <span class="project-card__price">R$ 16.739,80</span>
+                                        </article>
+                                    </div>
+                                </section>
+
+                                <section class="projects-panel projects-panel--compatibility" aria-label="Compatibilidade">
+                                    <div class="compatibility-header">
+                                        <div class="compatibility-header__label">
+                                            <span class="compatibility-header__icon" aria-hidden="true"></span>
+                                            <span>COMPATIBILIDADE</span>
+                                        </div>
+                                        <strong>95%</strong>
+                                    </div>
+
+                                    <div class="compatibility-bar" aria-hidden="true">
+                                        <span class="compatibility-bar__fill"></span>
+                                    </div>
+
+                                    <p class="compatibility-note">Para garantir a compatibilidade imediata do seu novo processador, nosso laboratório técnico realizará preventivamente a atualização da BIOS/Firmware da sua placa-mãe. Este serviço é cortesia da Pichau e não possui custo adicional.</p>
+                                </section>
+
+                                <section class="projects-panel projects-panel--components" aria-label="Componentes">
+                                    <h2 class="projects-panel__section-title">COMPONENTES</h2>
+
+                                    <div class="component-list">
+                                        <article class="component-row">
+                                            <div class="component-row__thumb" aria-hidden="true">
+                                                <img src="figma-assets\cpui.jpg" alt="Intel Core i9-14900K" class="component-row__image">
+                                            </div>
+                                            
+                                            <div class="component-row__copy">
+                                                <span class="component-row__type">PROCESSADOR</span>
+                                                <strong class="component-row__name">Intel Core i9-14900K</strong>
+                                                <span class="component-row__price">R$ 3.899,90</span>
+                                            </div>
+                                            <button class="row-action" type="button" aria-label="Remover componente">×</button>
+                                        </article>
+
+                                        <article class="component-row">
+                                            <div class="component-row__thumb" aria-hidden="true">
+                                                <img src="figma-assets\mobo.jpg" alt="ASUS ROG Maximus Z790" class="component-row__image">
+                                            </div>
+                                            
+                                            <div class="component-row__copy">
+                                                <span class="component-row__type">PLACA-MÃE</span>
+                                                <strong class="component-row__name">ASUS ROG Maximus Z790</strong>
+                                                <span class="component-row__price">R$ 4.250,00</span>
+                                            </div>
+                                            <button class="row-action" type="button" aria-label="Remover componente">×</button>
+                                        </article>
+
+                                        <article class="component-row">
+                                            <div class="component-row__thumb" aria-hidden="true">
+                                                <img src="figma-assets\corsair_ram.png" alt="Corsair RGB 32GB DDR5 6000MT/s" class="component-row__image">
+                                            </div>
+                                            
+                                            <div class="component-row__copy">
+                                                <span class="component-row__type">MEMÓRIA RAM</span>
+                                                <strong class="component-row__name">Corsair RGB 32GB DDR5 6000MT/s</strong>
+                                                <span class="component-row__price">R$ 940,00</span>
+                                            </div>
+                                            <button class="row-action" type="button" aria-label="Remover componente">×</button>
+                                        </article>
+
+                                        <article class="component-row">
+                                            <div class="component-row__thumb" aria-hidden="true">
+                                                <img src="figma-assets\4080.jpg" alt="RTX 4080 Super" class="component-row__image">
+                                            </div>
+                                            
+                                            <div class="component-row__copy">
+                                                <span class="component-row__type">PLACA DE VÍDEO</span>
+                                                <strong class="component-row__name">GeForce RTX 4080 Super</strong>
+                                                <span class="component-row__price">R$ 6.499,90</span>
+                                            </div>
+                                            <button class="row-action" type="button" aria-label="Remover componente">×</button>
+                                        </article>
+
+                                        <article class="component-row">
+                                            <div class="component-row__thumb" aria-hidden="true">
+                                                <img src="figma-assets\fonte.png" alt="Corsair RM1000x Gold" class="component-row__image">
+                                            </div>
+                                            
+                                            <div class="component-row__copy">
+                                                <span class="component-row__type">FONTE</span>
+                                                <strong class="component-row__name">Corsair RM1000x Gold</strong>
+                                                <span class="component-row__price">R$ 1.150,00</span>
+                                            </div>
+                                            <button class="row-action" type="button" aria-label="Remover componente">×</button>
+                                        </article>
+                                    </div>
+                                </section>
+
+                                <section class="projects-panel projects-panel--summary" aria-label="Resumo da Build">
+                                    <div class="summary-top">
+                                        <div class="summary-top__left">
+                                            <span class="summary-top__label">TOTAL DA BUILD</span>
+                                            <strong class="summary-top__total">R$ 16.739,80</strong>
+                                        </div>
+
+                                        <div class="summary-top__right">
+                                            <span>PREÇO NO PIX</span>
+                                            <strong>R$ 14.228,83.</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="action-buttons screen--product" aria-label="Action Buttons">
+                                        <a class="button button--primary" href="carrinho.html" aria-label="Comprar agora">
+                                            <img src="figma-assets/buy-icon.svg" alt="Comprar" class="button__icon button__icon--buy">
+                                            <span>COMPRAR AGORA</span>
+                                        </a>
+                                    </div>
+                                </section>
+
+                                <nav class="bottom-nav">
+                                    <a href="home.html" class="bottom-nav__item" aria-label="Página Inicial">
+                                        <img src="figma-assets\nav-home.svg" alt="Home" class="bottom-nav__icon">
+                                        <span class="bottom-nav__label">Home</span>
+                                    </a>
+                                    
+                                    <a href="#" class="bottom-nav__item" aria-label="Ir para Catálogo">
+                                        <img src="figma-assets\nav-catalog.svg" alt="Catálogo" class="bottom-nav__icon">
+                                        <span class="bottom-nav__label">Catálogo</span>
+                                    </a>
+                                    
+                                    <a href="builds.html" class="bottom-nav__item" aria-label="Ir para Builds">
+                                        <img src="figma-assets\nav-builds.svg" alt="Builds" class="bottom-nav__icon">
+                                        <span class="bottom-nav__label">Builds</span>
+                                    </a>
+                                    
+                                    <a href="preco.html" class="bottom-nav__item" aria-label="Ir para Ofertas">
+                                        <img src="figma-assets\nav-offers.svg" alt="Ofertas" class="bottom-nav__icon">
+                                        <span class="bottom-nav__label">Ofertas</span>
+                                    </a>
+                                    
+                                    <a href="#" class="bottom-nav__item" aria-label="Ir para Perfil">
+                                        <img src="figma-assets\nav-profile.svg" alt="Perfil" class="bottom-nav__icon">
+                                        <span class="bottom-nav__label">Perfil</span>
+                                    </a>
+                                </nav>
+                            </section>
+        </section>
+    </main>
+</body>
+</html>

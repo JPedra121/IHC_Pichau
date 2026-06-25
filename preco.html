@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Preco</title>
+</head>
+<body>
+    <main class="screen">
+        <section class="main-grid" aria-label="Main Comparison Grid">
+            
+            <header class="home-header">
+                <button class="icon-button" aria-label="Menu Principal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                
+                <div class="home-header__brand-group">
+                    <a href="home.html" class="home-brand" style="text-decoration: none; color: inherit; cursor: pointer;">Pichau</a>
+                </div>
+                
+                <a href="carrinho.html" class="cart-button-highlight" aria-label="Carrinho de Compras">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count">(5)</span>
+                </a>
+            </header>
+            <div class="header__copy" aria-label="Container">
+                <h1>Comparador de Preços</h1>
+            </div>
+            <article class="identity-card card" aria-label="Product Identity Card">
+                <div class="card-surface card-surface--media" aria-label="Overlay+Border+OverlayBlur">
+                    <div class="media-frame" aria-label="Background+Border">
+                        <img src="figma-assets/4080.jpg" alt="RTX 4080 Super Gaming OC 16GB" class="media-frame__image">
+                    </div>
+                </div>
+
+                <div class="identity-card__content" aria-label="Container">
+                    <h2 class="product-title">RTX 4080 Super Gaming OC<br>16GB</h2>
+
+                    <div class="badge-row" aria-label="Container">
+                        <span class="pill">NVIDIA</span>
+                        <span class="pill">GDDR6X</span>
+                        <span class="pill">16GB VRAM</span>
+                    </div>
+
+                    <div class="product-card__rating">
+                        <span class="rating-star">★</span>
+                        <span class="rating-value">5.0 (42)</span>
+                    </div>
+                </div>
+
+                <article class="price-history card-surface" aria-label="Price History Mini Chart">
+                    <div class="price-history__header" aria-label="Container">
+                        <h3>Histórico de Preço</h3>
+                        <div class="price-history__delta">
+                            <img src="figma-assets/price-chart.svg" alt="" aria-hidden="true">
+                            <span>-12% em 30 dias</span>
+                        </div>
+                    </div>
+
+                    <img src="figma-assets/price-graph.svg" alt="" class="price-history__graph" aria-hidden="true">
+
+                    <div class="price-history__months" aria-label="Container">
+                        <span>JAN</span>
+                        <span>MAR</span>
+                        <span>MAI</span>
+                        <span>JUL</span>
+                        <span>SET</span>
+                    </div>
+
+                    <div class="price-note" aria-label="Background+Border">
+                        <img src="figma-assets/price-note.svg" alt="" class="price-note__icon" aria-hidden="true">
+                        <p>Este é o menor preço dos últimos 6 meses. Ótima oportunidade de compra!</p>
+                    </div>
+                </article>
+            </article>
+
+            <section class="offers" aria-label="Price Comparison List">
+                <article class="best-offer" aria-label="Best Offer Highlight">
+                    <img src="figma-assets/gradient.png" alt="" class="best-offer__gradient" aria-hidden="true">
+
+                    <div class="best-offer__panel card-surface" aria-label="Overlay+Border+OverlayBlur">
+                        <div class="best-offer__top" aria-label="Container">
+                            <span class="store-mark" aria-hidden="true">SET</span>
+
+                            <div class="best-offer__store-copy">
+                                <div class="best-offer__store-name">Stetembro</div>
+                                <div class="best-offer__store-status">Melhor oferta do ano até hoje!<br>Aproveite!</div>
+                            </div>
+                        </div>
+
+                        <div class="best-offer__bottom" aria-label="Container">
+                            <strong class="best-offer__price">R$ 6.499,90</strong>
+                            <span class="best-offer__pix">No PIX (15% OFF)</span>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="retailer-list card-surface" aria-label="Retailer List">
+                    <article class="retailer-item" aria-label="Item 1">
+                        <div class="retailer-item__main">
+                            <span class="store-mark" aria-hidden="true">MAR</span>
+                            <div class="retailer-item__copy">
+                                <div class="retailer-item__name">Março</div>
+                                <div class="retailer-item__status">Segunda melhor oferta do ano</div>
+                            </div>
+                        </div>
+
+                        <div class="retailer-item__pricing">
+                            <strong class="retailer-item__price">R$ 6.780,00</strong>
+                            <span class="retailer-item__pix">no PIX</span>
+                        </div>
+                    </article>
+
+                    <article class="retailer-item" aria-label="Item 2">
+                        <div class="retailer-item__main">
+                            <span class="store-mark" aria-hidden="true">JAN</span>
+                            <div class="retailer-item__copy">
+                                <div class="retailer-item__name">Janeiro</div>
+                                <div class="retailer-item__status">Segunda melhor oferta do ano</div>
+                            </div>
+                        </div>
+
+                        <div class="retailer-item__pricing">
+                            <strong class="retailer-item__price">R$ 6.890,90</strong>
+                            <span class="retailer-item__pix">no PIX</span>
+                        </div>
+                    </article>
+
+                    <article class="retailer-item retailer-item--faded" aria-label="Item 3">
+                        <div class="retailer-item__main">
+                            <span class="store-mark" aria-hidden="true">MAI</span>
+                            <div class="retailer-item__copy">
+                                <div class="retailer-item__name">Maio</div>
+                                <div class="retailer-item__status">Pior oferta do ano</div>
+                            </div>
+                        </div>
+
+                        <div class="retailer-item__pricing">
+                            <strong class="retailer-item__price">R$ 7.120,00</strong>
+                            <span class="retailer-item__pix">no PIX</span>
+                        </div>
+                    </article>
+                </div>
+
+                <article class="build-cta card-surface" aria-label="Add to Build CTA">
+                    <div class="build-cta__copy" aria-label="Container">
+                        <h2>Projetando uma nova<br>máquina?</h2>
+                        <p>Adicione esta GPU à sua build atual e verificaremos automaticamente a compatibilidade com sua fonte e gabinete.</p>
+                    </div>
+
+                    <a href="builds.html" class="build-cta__button btn-rosado">
+                        Adicionar à minha build
+                    </a>
+
+                </article>
+            </section>
+            <nav class="bottom-nav">
+                <a href="home.html" class="bottom-nav__item" aria-label="Página Inicial">
+                    <img src="figma-assets\nav-home.svg" alt="Home" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Home</span>
+                </a>
+                
+                <a href="#" class="bottom-nav__item" aria-label="Ir para Catálogo">
+                    <img src="figma-assets\nav-catalog.svg" alt="Catálogo" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Catálogo</span>
+                </a>
+                
+                <a href="builds.html" class="bottom-nav__item" aria-label="Ir para Builds">
+                    <img src="figma-assets\nav-builds.svg" alt="Builds" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Builds</span>
+                </a>
+                
+                <a href="preco.html" class="bottom-nav__item" aria-label="Ir para Ofertas">
+                    <img src="figma-assets\nav-offers.svg" alt="Ofertas" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Ofertas</span>
+                </a>
+                
+                <a href="#" class="bottom-nav__item" aria-label="Ir para Perfil">
+                    <img src="figma-assets\nav-profile.svg" alt="Perfil" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Perfil</span>
+                </a>
+            </nav>
+        </section>
+        </main>
+</body>
+</html>

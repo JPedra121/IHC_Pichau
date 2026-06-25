@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho - Pichau</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="screen screen--cart" aria-label="Carrinho de Compras">
+            <header class="home-header">
+                <button class="icon-button" aria-label="Menu Principal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                
+                <div class="home-header__brand-group">
+                    <a href="home.html" class="home-brand" style="text-decoration: none; color: inherit; cursor: pointer;">Pichau</a>
+                </div>
+                
+                <a href="carrinho.html" class="cart-button-highlight" aria-label="Carrinho de Compras">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count">(5)</span>
+                </a>
+            </header>
+            
+            <div class="header__copy" aria-label="Container">
+                <h1>Meu Carrinho</h1>
+            </div>
+
+            <section class="cart-items-list">
+                
+                <article class="cart-item card-surface">
+                    <div class="cart-item__image-container">
+                        <img src="figma-assets/4080.jpg" alt="RTX 4080 Super" class="cart-item__image">
+                    </div>
+                    <div class="cart-item__details">
+                        <h3 class="cart-item__title">RTX 4080 Super Gaming OC Gigabyte</h3>
+                        <span class="cart-item__store">Vendido por Pichau</span>
+                        
+                        <div class="cart-item__footer">
+                            <strong class="cart-item__price">R$ 6.499,90</strong>
+                            
+                            <div class="quantity-selector">
+                                <button type="button" class="quantity-btn" aria-label="Diminuir quantidade">-</button>
+                                <span class="quantity-value">1</span>
+                                <button type="button" class="quantity-btn" aria-label="Aumentar quantidade">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cart-item__remove" aria-label="Remover item">✕</button>
+                </article>
+
+                <article class="cart-item card-surface">
+                    <div class="cart-item__image-container">
+                        <img src="figma-assets/corsair_ram.png" alt="Memória RAM 32GB" class="cart-item__image">
+                    </div>
+                    <div class="cart-item__details">
+                        <h3 class="cart-item__title">Memória Corsair RGB 32GB DDR5 6000MT/s</h3>
+                        <span class="cart-item__store">Vendido por Pichau</span>
+                        
+                        <div class="cart-item__footer">
+                            <strong class="cart-item__price">R$ 940,00</strong>
+                            
+                            <div class="quantity-selector">
+                                <button type="button" class="quantity-btn" aria-label="Diminuir quantidade">-</button>
+                                <span class="quantity-value">1</span>
+                                <button type="button" class="quantity-btn" aria-label="Aumentar quantidade">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cart-item__remove" aria-label="Remover item">✕</button>
+                </article>
+
+                <article class="cart-item card-surface">
+                    <div class="cart-item__image-container">
+                        <img src="figma-assets/cpui.jpg" alt="Intel Core i9-14900K" class="cart-item__image">
+                    </div>
+                    <div class="cart-item__details">
+                        <h3 class="cart-item__title">Intel Core i9-14900K</h3>
+                        <span class="cart-item__store">Vendido por Pichau</span>
+                        
+                        <div class="cart-item__footer">
+                            <strong class="cart-item__price">R$ 3.899,90</strong>
+                            
+                            <div class="quantity-selector">
+                                <button type="button" class="quantity-btn" aria-label="Diminuir quantidade">-</button>
+                                <span class="quantity-value">1</span>
+                                <button type="button" class="quantity-btn" aria-label="Aumentar quantidade">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cart-item__remove" aria-label="Remover item">✕</button>
+                </article>
+
+                <article class="cart-item card-surface">
+                    <div class="cart-item__image-container">
+                        <img src="figma-assets/mobo.jpg" alt="ASUS ROG Maximus Z790" class="cart-item__image">
+                    </div>
+                    <div class="cart-item__details">
+                        <h3 class="cart-item__title">ASUS ROG Maximus Z790</h3>
+                        <span class="cart-item__store">Vendido por Pichau</span>
+                        
+                        <div class="cart-item__footer">
+                            <strong class="cart-item__price">R$ 4.250,00</strong>
+                            
+                            <div class="quantity-selector">
+                                <button type="button" class="quantity-btn" aria-label="Diminuir quantidade">-</button>
+                                <span class="quantity-value">1</span>
+                                <button type="button" class="quantity-btn" aria-label="Aumentar quantidade">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cart-item__remove" aria-label="Remover item">✕</button>
+                </article>
+
+                <article class="cart-item card-surface">
+                    <div class="cart-item__image-container">
+                        <img src="figma-assets/fonte.png" alt="Corsair RM1000x Gold" class="cart-item__image">
+                    </div>
+                    <div class="cart-item__details">
+                        <h3 class="cart-item__title">Corsair RM1000x Gold</h3>
+                        <span class="cart-item__store">Vendido por Pichau</span>
+                        
+                        <div class="cart-item__footer">
+                            <strong class="cart-item__price">R$ 1.150,00</strong>
+                            
+                            <div class="quantity-selector">
+                                <button type="button" class="quantity-btn" aria-label="Diminuir quantidade">-</button>
+                                <span class="quantity-value">1</span>
+                                <button type="button" class="quantity-btn" aria-label="Aumentar quantidade">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cart-item__remove" aria-label="Remover item">✕</button>
+                </article>
+
+            </section>
+
+            <section class="coupon-section card-surface">
+                <input type="text" class="coupon-input" placeholder="Cupom de desconto" aria-label="Inserir cupom">
+                <button type="button" class="coupon-button">Aplicar</button>
+            </section>
+
+            <section class="cart-summary card-surface">
+                <div class="summary-row">
+                    <span class="summary-label">Subtotal</span>
+                    <span class="summary-value">R$ 16.739,80</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Frete</span>
+                    <span class="summary-value summary-value--free">Grátis</span>
+                </div>
+                <div class="summary-row summary-row--total">
+                    <span class="summary-label">Total no PIX</span>
+                    <strong class="summary-total-price">R$ 14.228,83</strong>
+                </div>
+                
+                <a href="checkout-endereco.html" class="checkout-button" style="text-decoration: none; display: flex;">
+                    <span>Finalizar Compra</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="checkout-icon">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </section>
+
+            <nav class="bottom-nav">
+                <a href="home.html" class="bottom-nav__item" aria-label="Página Inicial">
+                    <img src="figma-assets\nav-home.svg" alt="Home" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Home</span>
+                </a>
+                
+                <a href="#" class="bottom-nav__item" aria-label="Ir para Catálogo">
+                    <img src="figma-assets\nav-catalog.svg" alt="Catálogo" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Catálogo</span>
+                </a>
+                
+                <a href="builds.html" class="bottom-nav__item" aria-label="Ir para Builds">
+                    <img src="figma-assets\nav-builds.svg" alt="Builds" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Builds</span>
+                </a>
+                
+                <a href="preco.html" class="bottom-nav__item" aria-label="Ir para Ofertas">
+                    <img src="figma-assets\nav-offers.svg" alt="Ofertas" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Ofertas</span>
+                </a>
+                
+                <a href="#" class="bottom-nav__item" aria-label="Ir para Perfil">
+                    <img src="figma-assets\nav-profile.svg" alt="Perfil" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Perfil</span>
+                </a>
+            </nav>
+
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Método de Pagamento</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="screen screen--checkout-payment" aria-label="Forma de Pagamento">
+
+            <header class="home-header">
+                <button class="icon-button" aria-label="Menu Principal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                
+                <div class="home-header__brand-group">
+                    <a href="home.html" class="home-brand" style="text-decoration: none; color: inherit; cursor: pointer;">Pichau</a>
+                </div>
+                
+                <a href="carrinho.html" class="cart-button-highlight" aria-label="Carrinho de Compras">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count">(5)</span>
+                </a>
+            </header>
+
+            <div class="header__copy" aria-label="Container">
+                <h1>Forma de Pagamento</h1>
+            </div>
+
+            <form class="payment-form">
+                
+                <div class="payment-options-list">
+                    
+                    <label class="payment-option card-surface">
+                        <input type="radio" name="payment_method" value="pix" class="payment-radio" checked>
+                        <div class="payment-option__custom-ui">
+                            <div class="payment-option__icon-container">
+                                <svg viewBox="0 0 24 24" class="payment-svg-icon" fill="currentColor">
+                                    <path d="M12 .3a1.44 1.44 0 0 0-1 .4l-4.72 4.71a1.44 1.44 0 0 0 0 2l4.72 4.72a1.44 1.44 0 0 0 2 0l4.72-4.72a1.44 1.44 0 0 0 0-2L13 .7a1.44 1.44 0 0 0-1-.4zm0 12.33a1.44 1.44 0 0 0-1 .4l-4.72 4.72a1.44 1.44 0 0 0 0 2l4.72 4.72a1.44 1.44 0 0 0 2 0l4.72-4.72a1.44 1.44 0 0 0 0-2l-4.72-4.72a1.44 1.44 0 0 0-1-.4z"/>
+                                </svg>
+                            </div>
+                            <div class="payment-option__text">
+                                <strong class="payment-option__title">Pix</strong>
+                                <span class="payment-option__description">Aprovação imediata e 15% de desconto</span>
+                            </div>
+                            <div class="payment-option__indicator"></div>
+                        </div>
+                    </label>
+
+                    <label class="payment-option card-surface">
+                        <input type="radio" name="payment_method" value="card" class="payment-radio">
+                        <div class="payment-option__custom-ui">
+                            <div class="payment-option__icon-container">
+                                <svg viewBox="0 0 24 24" class="payment-svg-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                                </svg>
+                            </div>
+                            <div class="payment-option__text">
+                                <strong class="payment-option__title">Cartão de Crédito</strong>
+                                <span class="payment-option__description">Em até 12x sem juros no cartão</span>
+                            </div>
+                            <div class="payment-option__indicator"></div>
+                        </div>
+                    </label>
+
+                    <label class="payment-option card-surface">
+                        <input type="radio" name="payment_method" value="boleto" class="payment-radio">
+                        <div class="payment-option__custom-ui">
+                            <div class="payment-option__icon-container">
+                                <svg viewBox="0 0 24 24" class="payment-svg-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="3" y1="5" x2="3" y2="19"></line>
+                                    <line x1="6" y1="5" x2="6" y2="19"></line>
+                                    <line x1="10" y1="5" x2="10" y2="19"></line>
+                                    <line x1="14" y1="5" x2="14" y2="19"></line>
+                                    <line x1="18" y1="5" x2="18" y2="19"></line>
+                                    <line x1="21" y1="5" x2="21" y2="19"></line>
+                                </svg>
+                            </div>
+                            <div class="payment-option__text">
+                                <strong class="payment-option__title">Boleto Bancário</strong>
+                                <span class="payment-option__description">Processamento em até 2 dias úteis</span>
+                            </div>
+                            <div class="payment-option__indicator"></div>
+                        </div>
+                    </label>
+
+                </div>
+
+                <a href="confirmacao.html" class="checkout-button form-submit-button" style="text-decoration: none; display: flex;">
+                    <span>Finalizar Pedido</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="checkout-icon">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </a>
+            </form>
+
+            <nav class="bottom-nav" aria-label="Navegação Principal">
+                <a href="home.html" class="bottom-nav__item" aria-label="Ir para Início">
+                    <img src="figma-assets/nav-home.svg" alt="Início" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Home</span>
+                </a>
+                
+                <a href="#" class="bottom-nav__item" aria-label="Ir para Catálogo">
+                    <img src="figma-assets/nav-catalog.svg" alt="Catálogo" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Catálogo</span>
+                </a>
+                
+                <a href="builds.html" class="bottom-nav__item" aria-label="Ir para Builds">
+                    <img src="figma-assets/nav-builds.svg" alt="Builds" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Builds</span>
+                </a>
+                
+                <a href="preco.html" class="bottom-nav__item" aria-label="Ir para Ofertas">
+                    <img src="figma-assets/nav-offers.svg" alt="Ofertas" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Ofertas</span>
+                </a>
+                
+                <a href="#" class="bottom-nav__item" aria-label="Ir para Perfil">
+                    <img src="figma-assets/nav-profile.svg" alt="Perfil" class="bottom-nav__icon">
+                    <span class="bottom-nav__label">Perfil</span>
+                </a>
+            </nav>
+
+        </section>
+    </main>
+</body>
+</html>

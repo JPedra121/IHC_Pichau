@@ -1754,3 +1754,1208 @@ img {
 		font-size: 26px;
 	}
 }
+
+/* =========================================
+   ESTILOS ESPECÍFICOS DA TELA INICIAL (HOME)
+   ========================================= */
+
+.screen--home {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding-bottom: 90px; /* Espaço para não cobrir o conteúdo com a bottom-nav */
+}
+
+/* Header da Home */
+.home-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.home-brand {
+	font-size: 20px;
+	font-weight: 800;
+	color: var(--text);
+	letter-spacing: 0.05em;
+}
+
+.icon-button {
+	background: none;
+	border: none;
+	color: var(--cyan);
+	cursor: pointer;
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon-button svg {
+	width: 24px;
+	height: 24px;
+}
+
+.home-cart {
+	color: var(--cyan);
+	gap: 4px;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+/* Menu de Categorias (Pills) */
+.category-nav {
+	display: flex;
+	gap: 12px;
+	width: 100%;
+}
+
+.category-pill {
+	flex: 1;
+	background: var(--card-strong);
+	border: 1px solid var(--border-soft);
+	color: var(--cyan-muted);
+	padding: 10px;
+	border-radius: 6px;
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 14px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.category-pill--active {
+	background: var(--cyan);
+	color: var(--bg);
+	border-color: var(--cyan);
+}
+
+/* Título da Seção */
+.section-title {
+	font-size: 20px;
+	font-weight: 700;
+	color: var(--text);
+	margin: 10px 0 0 0;
+}
+
+/* Lista de Produtos */
+.products-featured {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+}
+
+/* Card 1: Carrossel */
+.product-carousel-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	text-align: center;
+}
+
+.carousel-product-title {
+	font-size: 28px;
+	font-weight: 800;
+	color: var(--cyan-soft);
+	margin: 0 0 4px 0;
+	text-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+.carousel-product-subtitle {
+	font-size: 14px;
+	color: var(--cyan-muted);
+	margin: 0 0 16px 0;
+}
+
+.product-media-frame {
+	width: 100%;
+	height: 160px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 16px;
+}
+
+.carousel-image {
+	max-width: 85%;
+	max-height: 85%;
+	object-fit: contain;
+}
+
+.carousel-dots {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+}
+
+.dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--border);
+}
+
+.dot--active {
+	width: 24px;
+	border-radius: 4px;
+	background: var(--cyan);
+}
+
+/* Card 2: Especificações */
+.product-spec-card {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.spec-product-title {
+	font-size: 22px;
+	font-weight: 700;
+	color: var(--text);
+	margin: 0;
+}
+
+.spec-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.spec-list li {
+	font-size: 14px;
+	color: var(--cyan-muted);
+	position: relative;
+	padding-left: 14px;
+}
+
+.spec-list li::before {
+	content: "•";
+	position: absolute;
+	left: 0;
+	color: var(--cyan);
+}
+
+/* Botão Add to Cart */
+.button--add-cart {
+	width: 100%;
+	background: transparent;
+	border: 1px solid var(--cyan);
+	color: var(--cyan);
+	padding: 12px;
+	font-weight: 700;
+	font-size: 14px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.button--add-cart:hover {
+	background: rgba(0, 219, 233, 0.1);
+}
+
+/* Ajuste do Header Geral para alinhar os três blocos */
+.home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Empurra um para cada ponta e um no centro */
+    padding: 16px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* Agrupamento dos textos centrais para não desalinharem */
+.home-header__brand-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* Faz o grupo ocupar o meio da tela */
+}
+
+/* Botão do menu (Garante tamanho fixo para não distorcer) */
+.icon-button {
+    background: none;
+    border: none;
+    color: var(--cyan);
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+/* Botão de carrinho destacado na Direita (Tema Cyberpunk/Ciano) */
+.cart-button-highlight {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--cyan);
+    color: var(--bg);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-weight: 800;
+    font-family: inherit;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 219, 233, 0.4);
+    height: 38px;
+}
+
+.cart-count {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* =========================================
+   ESTILOS DO CARD DETALHADO (RTX 4080)
+   ========================================= */
+
+.product-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product-card__image-wrapper {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--card-strong);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 12px;
+}
+
+.product-card__image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-card__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card__category {
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--cyan);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.product-card__rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.rating-star {
+    color: var(--cyan);
+}
+
+.product-card__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.product-card__description {
+    font-size: 13px;
+    color: var(--cyan-muted);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Painel de Preços */
+.pricing-panel {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 8px 0;
+}
+
+.pricing-panel__pix {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pix-tag {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--cyan-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.pix-value {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--cyan);
+    text-shadow: 0 0 12px rgba(0, 219, 233, 0.3);
+}
+
+.pricing-panel__divider {
+    width: 100%;
+    height: 1px;
+    background: var(--border-soft);
+}
+
+.pricing-panel__installments {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.installment-label {
+    font-size: 13px;
+    color: var(--cyan-muted);
+}
+
+.installment-full {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.installment-desc {
+    font-size: 12px;
+    color: var(--cyan-muted);
+}
+/* ==========================================================================
+   Especificações Técnicas Detalhadas (Lista Vertical)
+   ========================================================================== */
+
+.detailed-specifications {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 24px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.section-heading__accent {
+    width: 4px;
+    height: 20px;
+    background-color: var(--violet); /* Puxando a variável roxa do seu CSS */
+    border-radius: 2px;
+}
+
+.section-heading h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+/* Container principal da lista vertical */
+.spec-list {
+    display: flex;
+    flex-direction: column; /* Força um item embaixo do outro */
+    border: 1px solid var(--border-soft);
+    border-radius: 6px;
+    overflow: hidden; /* Mantém as bordas arredondadas nos itens internos */
+}
+
+/* Linha individual da especificação */
+.spec-row {
+    display: flex;
+    justify-content: space-between; /* Texto na esquerda, valor na direita */
+    align-items: center;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.spec-row:last-child {
+    border-bottom: none; /* Tira a borda do último item */
+}
+
+/* Efeito 'Zebra' para as linhas com a classe --alt */
+.spec-row--alt {
+    background: rgba(255, 255, 255, 0.03); 
+}
+
+.spec-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cyan-muted);
+}
+
+.spec-value {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text);
+    text-align: right;
+}
+
+.spec-value--strong {
+    font-weight: 700;
+    color: var(--cyan); /* Dá um destaque azul na quantidade de Cuda Cores */
+}
+.component-row__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    object-position: center;
+    border-radius: 4px; /* Mantém as bordinhas arredondadas do seu design */
+    display: block;
+    position: relative; /* Para ficar acima do efeito de gradiente do ::after, caso queira */
+    z-index: 1; 
+}
+/* ==========================================================================
+   CABEÇALHO REUTILIZÁVEL (PRECO.HTML / BUILDS.HTML)
+   ========================================================================== */
+
+.header__copy {
+    padding: 24px 4px 12px 4px; /* Dá um respiro confortável no topo */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.header__copy h1 {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 26px;        /* Tamanho ideal para telas de celular */
+    font-weight: 800;       /* Peso Extra-Bold para dar presença */
+    letter-spacing: -0.7px; /* Aproxima um pouco as letras (estética premium) */
+    margin: 0;
+    line-height: 1.2;
+    
+    /* 1. Efeito de Gradiente Tech (Branco para Ciano bem sutil no final) */
+    background: linear-gradient(135deg, #ffffff 50%, var(--cyan) 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    /* 2. Barra Vertical Neon na Esquerda (Guia o olhar do usuário) */
+    border-left: 4px solid var(--cyan);
+    padding-left: 14px;     /* Afasta o texto da barrinha */
+    
+    /* 3. Sombra sutil projetada para destacar o título do fundo escuro */
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    
+    /* Animação suave caso mude de tela (opcional para navegação futura) */
+    transition: all 0.3s ease;
+}
+/* ==========================================================================
+   TELA DE CARRINHO DE COMPRAS (CARRINHO.HTML)
+   ========================================================================== */
+
+/* Lista e Container de Itens */
+.cart-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.cart-item {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    position: relative;
+    align-items: center;
+}
+
+.cart-item__image-container {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cart-item__image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.cart-item__details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cart-item__title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.3;
+    padding-right: 16px; /* Evita bater no botão X */
+}
+
+.cart-item__store {
+    font-size: 11px;
+    color: var(--cyan-muted);
+}
+
+.cart-item__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.cart-item__price {
+    font-size: 15px;
+    color: var(--text);
+    font-weight: 700;
+}
+
+/* Seletor de Quantidade (- 1 +) */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-soft);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.quantity-btn {
+    background: transparent;
+    border: none;
+    color: var(--text);
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.quantity-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.quantity-value {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    min-width: 24px;
+    text-align: center;
+}
+
+/* Botão de excluir item */
+.cart-item__remove {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    color: var(--cyan-muted);
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.cart-item__remove:hover {
+    color: #ff4d4d; /* Fica vermelho no hover */
+}
+
+/* Área de Cupom */
+.coupon-section {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+
+.coupon-input {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--text);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 13px;
+}
+
+.coupon-input:focus {
+    outline: none;
+    border-color: var(--cyan);
+}
+
+.coupon-button {
+    background: transparent;
+    border: 1px solid var(--cyan);
+    color: var(--cyan);
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Hanken Grotesk', sans-serif;
+    transition: all 0.2s;
+}
+
+.coupon-button:hover {
+    background: rgba(0, 219, 233, 0.1);
+}
+
+/* Bloco de Resumo de Valores */
+.cart-summary {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 80px; /* Margem extra para não sumir atrás do bottom-nav */
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--cyan-muted);
+}
+
+.summary-value {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.summary-value--free {
+    color: var(--cyan);
+    font-weight: 700;
+}
+
+.summary-row--total {
+    border-top: 1px solid var(--border-soft);
+    padding-top: 12px;
+    margin-top: 4px;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.summary-total-price {
+    font-size: 18px;
+    color: var(--cyan-soft);
+}
+
+/* Botão Principal Checkout */
+.checkout-button {
+    background: var(--cyan);
+    color: #000;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 8px;
+    box-shadow: 0 4px 15px rgba(0, 219, 233, 0.3);
+    transition: transform 0.2s, background 0.2s;
+}
+
+.checkout-button:hover {
+    background: var(--cyan-soft);
+    transform: translateY(-1px);
+}
+
+.checkout-icon {
+    width: 18px;
+    height: 18px;
+}
+/* ==========================================================================
+   EFEITO HOVER - BOTÕES DO HEADER (Menu e Carrinho)
+   ========================================================================== */
+
+/* Prepara os botões para terem uma animação suave (se já não tiverem) */
+.icon-button, 
+.cart-button-highlight {
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+/* Quando o mouse passa por cima, desloca 2 pixels para cima */
+.icon-button:hover,
+.cart-button-highlight:hover {
+    transform: translateY(-2px);
+}
+
+/* Opcional: Se quiser que dê um "clique" para baixo quando o usuário apertar */
+.icon-button:active,
+.cart-button-highlight:active {
+    transform: translateY(0);
+}
+/* ==========================================================================
+   EFEITO HOVER - BOTÕES DA NAV BAR INFERIOR
+   ========================================================================== */
+
+/* Prepara os botões da barra inferior para a animação */
+.bottom-nav__item {
+    transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+}
+
+/* Quando o mouse passa por cima, desloca 2 pixels para cima */
+.bottom-nav__item:hover {
+    transform: translateY(-2px);
+}
+
+/* Quando o usuário clica, o botão volta à posição original */
+.bottom-nav__item:active {
+    transform: translateY(0);
+}
+/* ==========================================================================
+   RESET DE CORES REPADRONIZADAS NA NAV BAR
+   ========================================================================== */
+
+/* Remove qualquer cor de destaque padrão do texto e aplica o cinza fosco */
+.bottom-nav__item .bottom-nav__label {
+    color: var(--cyan-muted) !important;
+}
+
+/* Deixa todos os ícones em cinza fosco usando filtro de opacidade/cor */
+.bottom-nav__item .bottom-nav__icon {
+    filter: brightness(0) saturate(100%) invert(64%) sepia(8%) saturate(545%) hue-rotate(142deg) brightness(91%) contrast(84%);
+}
+
+/* Mantém o destaque neon APENAS na tela que estiver ativa (.bottom-nav__item--active) */
+.bottom-nav__item--active .bottom-nav__label {
+    color: var(--cyan) !important;
+}
+
+.bottom-nav__item--active .bottom-nav__icon {
+    filter: none; /* Remove o filtro cinza para o ícone voltar a ser ciano/neon original */
+}
+/* ==========================================================================
+   TELA DE CHECKOUT - FORMULÁRIO DE ENDEREÇO (CHECKOUT-ENDERECO.HTML)
+   ========================================================================== */
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 80px; /* Evita que o botão final fique ocultado pela barra inferior */
+}
+
+.form-container {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.form-container__title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 6px 0;
+    border-bottom: 1px solid var(--border-soft);
+    padding-bottom: 10px;
+}
+
+/* Estrutura dos Campos de Entrada */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--cyan-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.form-input {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    padding: 11px 14px;
+    color: var(--text);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 13.5px;
+    width: 100%;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Feedback visual focado no input */
+.form-input:focus {
+    outline: none;
+    border-color: var(--cyan);
+    box-shadow: 0 0 0 2px rgba(0, 219, 233, 0.05);
+}
+
+/* Alinhamento de linhas com múltiplos campos (Ex: Número/Complemento) */
+.form-row {
+    display: flex;
+    gap: 12px;
+}
+
+.flex-1 { flex: 1; }
+.flex-2 { flex: 2; }
+
+/* Grupo específico do CEP com botão */
+.cep-field-group {
+    display: flex;
+    gap: 8px;
+}
+
+.cep-search-button {
+    background: transparent;
+    border: 1px solid var(--cyan);
+    color: var(--cyan);
+    border-radius: 8px;
+    padding: 0 16px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Efeito de flutuação idêntico aos outros botões */
+.cep-search-button:hover {
+    background-color: rgba(0, 219, 233, 0.1);
+    transform: translateY(-2px);
+}
+
+.cep-search-button:active {
+    transform: translateY(0);
+}
+
+/* Força o botão de finalizar a ocupar toda a largura disponível */
+.form-submit-button {
+    width: 100%;
+}
+/* ==========================================================================
+   TELA DE CHECKOUT - MÉTODOS DE PAGAMENTO (CHECKOUT-PAGAMENTO.HTML)
+   ========================================================================== */
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 80px;
+}
+
+.payment-options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Base invisível para o Radio Button nativo */
+.payment-option {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    padding: 0; /* Remove padding interno do card para controlar pela div interna */
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.payment-radio {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* UI customizada que envelopa o conteúdo */
+.payment-option__custom-ui {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: inherit; /* Herda o border-radius do .card-surface */
+    width: 100%;
+}
+
+/* Efeito de flutuação ao passar o mouse */
+.payment-option:hover {
+    transform: translateY(-2px);
+}
+
+/* Container do ícone à esquerda */
+.payment-option__icon-container {
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-soft);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cyan-muted);
+    flex-shrink: 0;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.payment-svg-icon {
+    width: 22px;
+    height: 22px;
+}
+
+/* Detalhes de textos internos */
+.payment-option__text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.payment-option__title {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.payment-option__description {
+    font-size: 12px;
+    color: var(--cyan-muted);
+    line-height: 1.3;
+}
+
+/* Indicador circular de check (à direita) */
+.payment-option__indicator {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--border-soft);
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Interno do indicador (pontinho central) */
+.payment-option__indicator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--cyan);
+    transition: transform 0.2s ease;
+}
+
+/* ==========================================================================
+   ESTADOS ATIVOS (Quando o rádio correspondente for marcado [checked])
+   ========================================================================== */
+
+/* 1. Altera a borda do cartão e adiciona o brilho neon discreto */
+.payment-radio:checked + .payment-option__custom-ui {
+    box-shadow: 0 0 0 1px var(--cyan), 0 4px 20px rgba(0, 219, 233, 0.15);
+}
+
+/* 2. Acende a cor do container do ícone */
+.payment-radio:checked + .payment-option__custom-ui .payment-option__icon-container {
+    color: var(--cyan);
+    background-color: rgba(0, 219, 233, 0.05);
+    border-color: rgba(0, 219, 233, 0.2);
+}
+
+/* 3. Acende as bordas do indicador redondo e ativa o ponto ciano central */
+.payment-radio:checked + .payment-option__custom-ui .payment-option__indicator {
+    border-color: var(--cyan);
+}
+
+.payment-radio:checked + .payment-option__custom-ui .payment-option__indicator::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+/* ==========================================================================
+   TELA DE SUCESSO / CONFIRMAÇÃO (CONFIRMACAO.HTML)
+   ========================================================================== */
+
+/* Área do Herói (Ícone de sucesso e título) */
+.success-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px 16px 24px;
+    gap: 12px;
+}
+
+.success-hero__icon {
+    width: 64px;
+    height: 64px;
+    background: rgba(0, 219, 233, 0.1);
+    color: var(--cyan);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    box-shadow: 0 0 20px rgba(0, 219, 233, 0.2); /* Brilho neon sutil no ícone */
+}
+
+.success-hero__icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.success-hero__title {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text);
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.success-hero__message {
+    font-size: 14.5px;
+    color: var(--cyan-muted);
+    margin: 0;
+}
+
+/* Cartão de Resumo do Pedido */
+.order-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.order-details__title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 4px 0;
+    border-bottom: 1px solid var(--border-soft);
+    padding-bottom: 14px;
+}
+
+/* Linhas com as informações do pedido */
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.detail-label {
+    color: var(--cyan-muted);
+    font-weight: 600;
+}
+
+.detail-value {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.detail-value--highlight {
+    color: var(--cyan);
+    font-weight: 800;
+    font-size: 16px;
+}
+
+/* Botões Finais */
+.success-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 80px; /* Evita que o bottom-nav cubra os botões */
+}
+
+/* Botão fantasma (Apenas texto com hover) */
+.button-ghost {
+    background: transparent;
+    color: var(--cyan);
+    border: none;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 14.5px;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    display: block; /* Para o padding funcionar corretamente no link */
+}
+
+.button-ghost:hover {
+    opacity: 0.8;
+    transform: translateY(-2px); /* Mantém a consistência de flutuar ao passar o mouse */
+}
+/* Estilos principais do botão rosado */
+.btn-rosado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff4d85; /* Cor meio rosada */
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700; /* Texto em negrito */
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 8px; /* Cantos arredondados */
+    border: none;
+    cursor: pointer;
+    
+    /* Configura as transições suaves para o movimento do hover e active */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 6px rgba(255, 77, 133, 0.2);
+}
+
+/* Efeito de passar o mouse (levanta um pouquinho) */
+.btn-rosado:hover {
+    transform: translateY(-3px); /* Move 3px para cima */
+    box-shadow: 0 8px 15px rgba(255, 77, 133, 0.4); /* Aumenta a sombra para dar sensação de altura */
+    background-color: #ff3372; /* Fica um rosa levemente mais forte */
+}
+
+/* Efeito de clique (desce dando impressão de toque) */
+.btn-rosado:active {
+    transform: translateY(2px); /* Move para baixo em relação à posição original */
+    box-shadow: 0 2px 4px rgba(255, 77, 133, 0.2); /* Sombra menor e mais rente */
+}
