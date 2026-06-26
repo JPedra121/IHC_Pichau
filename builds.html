@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -10,9 +10,22 @@
     <title>Builds</title>
 </head>
 <body>
+    <div class="offcanvas-backdrop" aria-hidden="true"></div>
+    <aside class="offcanvas-menu" aria-hidden="true">
+        <div class="offcanvas-menu__header">
+            <strong>Menu</strong>
+            <button class="offcanvas-close" aria-label="Fechar menu">×</button>
+        </div>
+        <nav class="offcanvas-nav">
+            <a href="home.html">Home</a>
+            <a href="builds.html">Builds</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="preco.html">Ofertas</a>
+            <a href="#">Perfil</a>
+        </nav>
+    </aside>
     <main class="page">
         <section class="screen screen--projects" aria-label="Meus Projetos">
-                            <section class="screen screen--projects" aria-label="Meus Projetos">
                                 <header class="home-header">
                                     <button class="icon-button" aria-label="Menu Principal">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
@@ -24,6 +37,12 @@
                                     
                                     <div class="home-header__brand-group">
                                         <a href="home.html" class="home-brand" style="text-decoration: none; color: inherit; cursor: pointer;">Pichau</a>
+                                    </div>
+                                    <div class="header-links">
+                                        <a href="home.html">Home</a>
+                                        <a href="builds.html">Builds</a>
+                                        <a href="preco.html">Ofertas</a>
+                                        <a href="carrinho.html">Carrinho</a>
                                     </div>
                                     
                                     <a href="carrinho.html" class="cart-button-highlight" aria-label="Carrinho de Compras">
@@ -96,7 +115,7 @@
                                             </div>
                                             
                                             <div class="component-row__copy">
-                                                <span class="component-row__type">PLACA-MÃE</span>
+                                                <span class="component-row__type">PLACA-Mãe</span>
                                                 <strong class="component-row__name">ASUS ROG Maximus Z790</strong>
                                                 <span class="component-row__price">R$ 4.250,00</span>
                                             </div>
@@ -194,5 +213,6 @@
                             </section>
         </section>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>

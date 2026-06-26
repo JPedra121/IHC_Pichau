@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="offcanvas-backdrop" aria-hidden="true"></div>
+    <aside class="offcanvas-menu" aria-hidden="true">
+        <div class="offcanvas-menu__header">
+            <strong>Menu</strong>
+            <button class="offcanvas-close" aria-label="Fechar menu">×</button>
+        </div>
+        <nav class="offcanvas-nav">
+            <a href="home.html">Home</a>
+            <a href="builds.html">Builds</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="preco.html">Ofertas</a>
+            <a href="#">Perfil</a>
+        </nav>
+    </aside>
     <main class="page">
         <section class="screen screen--success" aria-label="Confirmação de Compra">
             
@@ -26,6 +40,12 @@
                 
                 <div class="home-header__brand-group">
                     <a href="home.html" class="home-brand" style="text-decoration: none; color: inherit; cursor: pointer;">Pichau</a>
+                </div>
+                <div class="header-links">
+                    <a href="home.html">Home</a>
+                    <a href="builds.html">Builds</a>
+                    <a href="preco.html">Ofertas</a>
+                    <a href="carrinho.html">Carrinho</a>
                 </div>
                 
                 <a href="carrinho.html" class="cart-button-highlight" aria-label="Carrinho de Compras">
@@ -107,5 +127,6 @@
 
         </section>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,20 @@
     <title>Detalhe</title>
 </head>
 <body>
+    <div class="offcanvas-backdrop" aria-hidden="true"></div>
+    <aside class="offcanvas-menu" aria-hidden="true">
+        <div class="offcanvas-menu__header">
+            <strong>Menu</strong>
+            <button class="offcanvas-close" aria-label="Fechar menu">×</button>
+        </div>
+        <nav class="offcanvas-nav">
+            <a href="home.html">Home</a>
+            <a href="builds.html">Builds</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="preco.html">Ofertas</a>
+            <a href="#">Perfil</a>
+        </nav>
+    </aside>
     <main class="page">
         <section class="screen screen--product" aria-label="Detalhes do Componente">
             <header class="home-header">
@@ -23,6 +37,12 @@
                 
                 <div class="home-header__brand-group">
                     <a href="home.html" class="home-brand" style="text-decoration: none; color: inherit; cursor: pointer;">Pichau</a>
+                </div>
+                <div class="header-links">
+                    <a href="home.html">Home</a>
+                    <a href="builds.html">Builds</a>
+                    <a href="preco.html">Ofertas</a>
+                    <a href="carrinho.html">Carrinho</a>
                 </div>
                 
                 <a href="carrinho.html" class="cart-button-highlight" aria-label="Carrinho de Compras">
@@ -167,53 +187,57 @@
                     </a>
                 </div>
                 
-                <div class="suggestions-slider" style="display: flex; gap: 16px; margin-top: 24px; padding-bottom: 16px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;"> 
-                    
-                    <article class="suggestion-card" aria-label="Fonte" style="flex: 0 0 auto; scroll-snap-align: start; width: 140px;">
-                        <div class="suggestion-card__image-wrap">
-                            <img src="figma-assets/psu-56586a.png" alt="Fonte 850W" class="suggestion-card__image">
-                        </div>
-                        <div class="suggestion-card__text-block suggestion-card__text-block--stacked">
-                            <span class="suggestion-card__eyebrow">FONTE RECOMENDADA</span>
-                            <h3 class="suggestion-card__title suggestion-card__title--small">850W 80 Plus Gold</h3>
-                            <strong class="suggestion-card__price suggestion-card__price--small">R$ 750</strong>
-                        </div>
-                        <a class="mini-button" href="#" aria-label="Adicionar fonte">
-                            <img src="figma-assets/card-add-icon-2.svg" alt="" class="button__icon button__icon--add">
-                            <span>Adicionar</span>
-                        </a>
-                    </article>
+                <div class="suggestions-slider-wrapper">
+                    <button type="button" class="slider-control slider-control--prev" aria-label="Anterior">‹</button>
+                    <div class="suggestions-slider" style="display: flex; gap: 16px; margin-top: 24px; padding-bottom: 16px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;"> 
+                        
+                        <article class="suggestion-card" aria-label="Fonte" style="flex: 0 0 auto; scroll-snap-align: start; width: 140px;">
+                            <div class="suggestion-card__image-wrap">
+                                <img src="figma-assets/psu-56586a.png" alt="Fonte 850W" class="suggestion-card__image">
+                            </div>
+                            <div class="suggestion-card__text-block suggestion-card__text-block--stacked">
+                                <span class="suggestion-card__eyebrow">FONTE RECOMENDADA</span>
+                                <h3 class="suggestion-card__title suggestion-card__title--small">850W 80 Plus Gold</h3>
+                                <strong class="suggestion-card__price suggestion-card__price--small">R$ 750</strong>
+                            </div>
+                            <a class="mini-button" href="#" aria-label="Adicionar fonte">
+                                <img src="figma-assets/card-add-icon-2.svg" alt="" class="button__icon button__icon--add">
+                                <span>Adicionar</span>
+                            </a>
+                        </article>
 
-                    <article class="suggestion-card" aria-label="RAM" style="flex: 0 0 auto; scroll-snap-align: start; width: 140px;">
-                        <div class="suggestion-card__image-wrap">
-                            <img src="figma-assets/ram-56586a.png" alt="32GB DDR5 6000MT/s" class="suggestion-card__image">
-                        </div>
-                        <div class="suggestion-card__text-block suggestion-card__text-block--stacked">
-                            <span class="suggestion-card__eyebrow">MEMÓRIA</span>
-                            <h3 class="suggestion-card__title suggestion-card__title--small">32GB DDR5 6000MT/s</h3>
-                            <strong class="suggestion-card__price suggestion-card__price--small">R$ 940</strong>
-                        </div>
-                        <a class="mini-button" href="#" aria-label="Adicionar memória">
-                            <img src="figma-assets/card-add-icon-3.svg" alt="" class="button__icon button__icon--add">
-                            <span>Adicionar</span>
-                        </a>
-                    </article>
+                        <article class="suggestion-card" aria-label="RAM" style="flex: 0 0 auto; scroll-snap-align: start; width: 140px;">
+                            <div class="suggestion-card__image-wrap">
+                                <img src="figma-assets/ram-56586a.png" alt="32GB DDR5 6000MT/s" class="suggestion-card__image">
+                            </div>
+                            <div class="suggestion-card__text-block suggestion-card__text-block--stacked">
+                                <span class="suggestion-card__eyebrow">MEMÓRIA</span>
+                                <h3 class="suggestion-card__title suggestion-card__title--small">32GB DDR5 6000MT/s</h3>
+                                <strong class="suggestion-card__price suggestion-card__price--small">R$ 940</strong>
+                            </div>
+                            <a class="mini-button" href="#" aria-label="Adicionar memória">
+                                <img src="figma-assets/card-add-icon-3.svg" alt="" class="button__icon button__icon--add">
+                                <span>Adicionar</span>
+                            </a>
+                        </article>
 
-                    <article class="suggestion-card" aria-label="Processador" style="flex: 0 0 auto; scroll-snap-align: start; width: 140px;">
-                        <div class="suggestion-card__image-wrap">
-                            <img src="figma-assets/processor-f255f9.png" alt="Intel Core i9-14900K" class="suggestion-card__image">
-                        </div>
-                        <div class="suggestion-card__text-block suggestion-card__text-block--stacked">
-                            <span class="suggestion-card__eyebrow">PROCESSADOR</span>
-                            <h3 class="suggestion-card__title suggestion-card__title--small">Intel Core i9-14900K</h3>
-                            <strong class="suggestion-card__price suggestion-card__price--small">R$ 3.899</strong>
-                        </div>
-                        <a class="mini-button" href="#" aria-label="Adicionar processador">
-                            <img src="figma-assets/card-add-icon.svg" alt="" class="button__icon button__icon--add">
-                            <span>Adicionar</span>
-                        </a>
-                    </article>
+                        <article class="suggestion-card" aria-label="Processador" style="flex: 0 0 auto; scroll-snap-align: start; width: 140px;">
+                            <div class="suggestion-card__image-wrap">
+                                <img src="figma-assets/processor-f255f9.png" alt="Intel Core i9-14900K" class="suggestion-card__image">
+                            </div>
+                            <div class="suggestion-card__text-block suggestion-card__text-block--stacked">
+                                <span class="suggestion-card__eyebrow">PROCESSADOR</span>
+                                <h3 class="suggestion-card__title suggestion-card__title--small">Intel Core i9-14900K</h3>
+                                <strong class="suggestion-card__price suggestion-card__price--small">R$ 3.899</strong>
+                            </div>
+                            <a class="mini-button" href="#" aria-label="Adicionar processador">
+                                <img src="figma-assets/card-add-icon.svg" alt="" class="button__icon button__icon--add">
+                                <span>Adicionar</span>
+                            </a>
+                        </article>
 
+                    </div>
+                    <button type="button" class="slider-control slider-control--next" aria-label="Próximo">›</button>
                 </div>
             </section>
             <nav class="bottom-nav">
@@ -245,5 +269,6 @@
         </section>
     </main>
 
+    <script src="app.js"></script>
 </body>
 </html>
